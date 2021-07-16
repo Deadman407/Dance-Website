@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar <!--.top.firstClass.secondClass><!-->
+        ul 
+            div#logo 
+                img(src="/static/logo.webp") 
+                | VDA
+            li #[a(href="/") Home] 
+            li #[a(href="/") About]
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection 
+        div Welcome to Vicky's Dance Academy 
+        div.small Eat Sleep Dance Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+          h3 Dance Perfection
+          div.card-box 
+              div.card-img 
+                  img(src="/static/1.jpg")
+              div.card-content 
+                  p This is the best dance academy in the universe
+        div.card 
+          h3 Dance the way you like
+          div.card-box 
+              div.card-img 
+                  img(src="/static/2.jpg")
+              div.card-content 
+                  p This is the best dance academy in the universe
+        div.card 
+          h3 Expert Teaching
+          div.card-box 
+              div.card-img 
+                  img(src="/static/3.jpg")
+              div.card-content 
+                  p This is the best dance academy in the universe
+    section#sponsorsSection 
+        h2 Our sponsors 
+        div#sponsors 
+            img(src="/static/spon1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/spon2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/spon3.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/spon4.png", alt="Sponsor Image", class="spImage") 
+    footer#footer 
+        | Copyright ©  2021  vickydanceacademy.com | All rights reserved
+    script
+      include ../static/index.js
